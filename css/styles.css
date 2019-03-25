@@ -1,1 +1,224 @@
-/* styles.css */
+/* =-=-=-=-=-=-=-=-=-= Universal selctor =-=-=-=-=-=-=-=-= */
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-= */
+header {
+        text-align: center;
+}
+
+h1 {
+    background-color: #404040;
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+header h2 {
+    margin-top: 26px;
+    font-size: 1.2em;
+}
+
+header p {
+    font-size: 14px;
+    color: darkgrey;
+    font-weight: 300;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+.thick-top-hr {
+    border-top: 5px solid black;
+    margin-bottom: 0px;
+    width: 93%;
+}
+
+.thin-top-hr {
+    border-top: 2px solid black;
+    margin-top: 2px;
+    width: 93%;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Form =-=-=-=-=-=-=-=-= */
+
+form h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    display: none;
+}
+
+label {
+    color: #a0a0a0;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.contact-set input, select {
+    background-color: #f0f0f0;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 12px;
+    font-weight: 400;
+    font-style: italic;
+    color: #909090;
+    text-indent: 12px;
+    transition: outline-width .2s, background-color .2s;
+}
+
+input[type=text], 
+input[type=email], 
+input[type=tel],
+select {
+    margin-left: 0;
+}
+
+input[type=text]::placeholder, 
+input[type=email]::placeholder,
+input[type="phone"]::placeholder {
+    margin-left: 0;
+    text-align: right;
+    padding-right: 16px;
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline-color: darkblue;
+    outline-width: 2px;
+    background-color: #fafafa; 
+}
+
+select {
+    font-style: normal;
+    text-indent: 12px;
+    color: #a0a0a0;
+    font-size: 14px;
+}
+
+#zip {
+    width: 55%;
+    margin-left:0;
+}
+
+.bottom-hr {
+    border-top: 2px solid black;
+    margin-top: 2px;
+    width: 93%;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Newsletter Selection =-=-=-=-=-=-=-=-= */
+
+.newsletter-set {
+    background-color: #fdf6e9;
+}
+.other-topics {
+    margin-left: 12px;
+    margin-bottom: 112px;
+}
+
+textarea {
+    resize: none;
+    background-color: #f0f0f0;
+    width: 95%;
+    border: none;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 96px;
+    margin-left: 8px;
+    margin-top: 12px;
+}
+
+p {
+    color: #a0a0a0;
+}
+
+.newsletter-format {
+    font-style: normal;
+    font-size: 14px;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Button and Copyright =-=-=-=-=-=-=-=-= */
+
+button {
+    font-size: 18px;
+    display: inline-block;
+    border-radius: 4px;
+    width: 95%;
+    text-align: center;
+    height: 64px;
+    background-color: #4ebbb5;
+    color: white;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    color: #909090;
+    margin-top: 24px;
+    margin-bottom: 75%;
+    word-spacing: 1.2px;
+}
+
+/* =-=-=-=-=-=-=-=-=-= Media Queries =-=-=-=-=-=-=-=-= */
+
+@media (min-width: 768px) {
+    /* stuff goes here */
+    header h2 {
+        margin-top: 68px;
+        font-size: 24px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .contact-set input {
+        display: inline-block;
+        width: 75%;
+    }
+
+    .contact-set select {
+        width: 75%;
+    }
+
+    .contact-set label{
+        display: inline-block;
+        width: 15%;
+        margin-right: 7%;
+    }
+
+    #zip {
+        width: 20%;
+        margin-bottom: 32px;
+    }
+
+    .newsletter-set h2 {
+        margin-top: 30px;
+    }
+
+    .copyright {
+        margin-bottom: 40%;
+    }
+}
