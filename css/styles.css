@@ -46,7 +46,6 @@ header p {
 }
 
 /* =-=-=-=-=-=-=-=-=-= Form =-=-=-=-=-=-=-=-= */
-
 form h2 {
     font-size: 18px;
     margin-top: 20px;
@@ -116,6 +115,7 @@ select {
 #zip {
     width: 55%;
     margin-left:0;
+    margin-right: 90px;
 }
 
 .bottom-hr {
@@ -125,10 +125,10 @@ select {
 }
 
 /* =-=-=-=-=-=-=-=-=-= Newsletter Selection =-=-=-=-=-=-=-=-= */
-
 .newsletter-set {
     background-color: #fdf6e9;
 }
+
 .other-topics {
     margin-left: 12px;
     margin-bottom: 112px;
@@ -157,7 +157,6 @@ p {
 }
 
 /* =-=-=-=-=-=-=-=-=-= Button and Copyright =-=-=-=-=-=-=-=-= */
-
 button {
     font-size: 18px;
     display: inline-block;
@@ -182,9 +181,7 @@ button {
 }
 
 /* =-=-=-=-=-=-=-=-=-= Media Queries =-=-=-=-=-=-=-=-= */
-
 @media (min-width: 768px) {
-    /* stuff goes here */
     header h2 {
         margin-top: 68px;
         font-size: 24px;
